@@ -10,11 +10,8 @@
     <h1>Site do Gui</h1>
   </header>
 
-  <!-- LAYOUT: MENU LATERAL (ESQ) + VÍDEO (DIR) -->
   <div class="layout">
-    <!-- LATERAL ESQUERDA -->
     <aside class="sidebar compacto">
-      <!-- Seletor de tema -->
       <section style="padding:12px 0;">
         <label for="tema" style="color:#BDC3C7; margin-right:8px;">ESCOLHA O TEMA:</label>
         <select id="tema">
@@ -25,12 +22,10 @@
         </select>
       </section>
 
-      <!-- Menu dinâmico gerado via JS -->
       <nav class="nav-vertical" aria-label="Lista de vídeos do tema">
-        <ul id="menu-temas"><!-- Itens gerados via JS --></ul>
+        <ul id="menu-temas"></ul>
       </nav>
 
-      <!-- Menu fixo adicional -->
       <br>
       <h1 style="font-size:15px; color:#f0f0f0; margin:16px 0; text-align:left;">
   VÍDEOS EXTERNOS DO YOUTUBE👇
@@ -46,7 +41,6 @@
       </nav>
     </aside>
 
-    <!-- PLAYER À DIREITA -->
     <main class="player">
       <div class="video-box">
         <iframe
@@ -67,7 +61,6 @@
     </main>
   </div>
 
-  <!-- JavaScript -->
   <script>
     // Mapa de temas → lista de vídeos
     const TEMAS = {
@@ -83,6 +76,19 @@
         { titulo: "NEYMAR 79 GOLS", 
          autor: "GUI", 
          url: "https://youtu.be/UcLXIG3W7u4?si=a9W7unNPrLxe5xUQ" 
+        },
+        // NOVOS VÍDEOS DE NEYMAR SKILLS (ADICIONADOS)
+        { titulo: "NEYMAR 100+ WOW SKILLS", 
+         autor: "MNcompsJR", 
+         url: "https://www.youtube.com/watch?v=OWOjRdmpM6I" 
+        },
+        { titulo: "THE BEST OF NEYMAR | BARCELONA SKILLS, DRIBBLES, GOALS", 
+         autor: "LALIGA EA SPORTS", 
+         url: "https://www.youtube.com/watch?v=6JX4jWuJCzM" 
+        },
+        { titulo: "MELHORES LANCES DO NEYMAR | DRIBBLES ABSURDOS | GOLAÇOS", 
+         autor: "SAMBAFOOT", 
+         url: "https://www.youtube.com/watch?v=wrIoqo7dLoA" 
         },
       ],
       MENSAGENS: [
@@ -172,9 +178,3 @@
   </script>
 </body>
 </html>
-```
-
-
-
-
-
